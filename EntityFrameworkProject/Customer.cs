@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace EntityFrameworkProject
 {
-    class Program
+    public class Customer
     {
-        static void Main(string[] args)
-        {
-            
-        }
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }
