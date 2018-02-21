@@ -15,7 +15,7 @@ namespace EntityFrameworkProject
             Order[] orders = db.Orders.ToArray();
             foreach(Order order in orders)
             {
-                string message = $"Id= {order.Id}, Total= {order.Total}, Cust={order.Customer.Name}";
+                string message = $"Id= {order.Id}, Total= {order.Total}, Cust={order.Customer.Name}, OrderDate= {order.OrderDate}, OrderDesc={order.OrderDescription}";
                 Console.WriteLine(message);
             }
 
