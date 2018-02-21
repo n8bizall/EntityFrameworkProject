@@ -11,7 +11,9 @@ namespace EntityFrameworkProject
     {
         public IntroDbContext() : base()  //default constructor for my class : inheriting the db context constructor
         { }
-            public virtual DbSet<Customer> Customers { get; set; } }
-      
-         }
+        public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Order> Orders { get; set; }
+
+    }
+}
     
